@@ -57,6 +57,7 @@ public enum AlertIcon {
 	case privacy
 	case cart
 	case search
+  case systemName(name: String)
 }
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------
@@ -83,6 +84,7 @@ extension AlertIcon {
 			case .privacy:		return UIImage(systemName: "hand.raised.fill")
 			case .cart:			return UIImage(systemName: "cart.fill")
 			case .search:		return UIImage(systemName: "magnifyingglass")
+    case .systemName(name: let name): return UIImage(systemName: name)
 		}
 	}
 }
